@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="icon" href="img/favicon-32x32.png">
+    <title>DIW04</title>
+</head>
+<body>
+    <div class="header">
+        <ul>
+            <ul class="header__lan">
+                <li><a>EN</a></li>
+                <li>|</li>
+                <li><a class="header__lan--active">ES</a></li>
+            </ul>
+            <li>
+                <p>Enciclopedia de Front-End</p>
+            </li>
+            <li>
+                <img class="header__logo" src="img/logo2.png" alt="logo principal">
+            </li>
+        </ul>
+    </div>
+    <nav>
+        <ul>
+            <li>
+                <a href="./index.html">Module-Bundlers</a>
+            </li>
+            <li class="--active">
+                <a>Lenguaje Front-End</a>
+            </li>
+            <li>
+                <a>Preprocesadores</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <picture>
+            <source media="(max-width: 899px)" srcset="./img/startup_900.jpg">
+            <source media="(min-width: 900px)" srcset="./img/startup_1280.jpg">
+            <img class="wdt-10" src="./img/startup_1280.jpg" alt="startup">
+          </picture>
+        <div class="article wdt-8">
+            <p class="article__title start">Las Bases del FrontEnd</p>
+            <p>A pesar de que hay varios lenguajes que se usan en frontend, nosotros nos fijaremos en tres elementos: HTML, CSS y JavaScript (aunque HTML  yCSS no son lenguajes de programación propieamente dichos)</p>
+            <img class="animated_img" alt="computer"
+                srcset="./img/computer_450.jpg 450w,
+                        ./img/computer_640.jpg 640w,"
+                sizes="(max-width: 450px) 300px,
+                        (max-width: 940px) 550px,
+                        (min-width: 701px) 300px,"
+                src="./img/computer_640.jpgg">
+
+            <img class="animated_img" alt="laptop work"
+                srcset="./img/laptop-work_450.jpg 450w,
+                        ./img/laptop-work_640.jpg 640w,"
+                sizes="(max-width: 450px) 300px,
+                        (max-width: 940px) 550px,
+                        (min-width: 701px) 300px"
+                src="./img/laptop-work_640.jpg">
+
+
+            <img class="animated_img" alt="student"
+                srcset="./img/student_450.jpg 450w,
+                        ./img/student_640.jpg 640w"
+                sizes="(max-width: 450px) 300px,
+                        (max-width: 940px) 550px,
+                        (min-width: 701px) 300px"
+                src="./img/student_640.jpg">
+        </div>
+    </main>
+
+    <footer class="footer">
+        <img src="img/logo1.png" alt="logo footer">
+        <p class="footer__title">Enciclopedia de Front-End</p>
+        <p class="footer__item">Calle Cantones 5. 31243 Estella</p>
+        <p class="footer__item">Tel. 948 22 65 36</p>
+        <p class="footer__item">info@enciclopediafrontend.org</p>
+        <nav>
+            <ul>
+                <li>
+                    <a class="footer__nav-item"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                    <a class="footer__nav-item"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li>
+                    <a class="footer__nav-item"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                    <a class="footer__nav-item"><i class="fab fa-youtube"></i></a>
+                </li>
+            </ul>
+        </nav>
+        <nav>
+            <ul>
+                <li><a class="footer__nav-item">Quiénes somos</a></li>
+                <li><a class="footer__nav-item">Política de privacidad</a></li>
+                <li><a class="footer__nav-item">Aviso legal</a></li>
+                <li><a class="footer__nav-item">Cookies</a></li>
+            </ul>
+        </nav>
+        <p class="footer__credits">Actividad realizada por Djaafar Mechekour, para la asignatura Diseño de Interfaces WEB . Curso 2020-2021</p>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,44 @@
+//// @author Djaafar Mechekour Villar
+// -----------------   MIXINS  ----------------- //
+
+/// Mixin para centrar elementos
+/// @group layout
+@mixin center {
+    margin: 0 auto;
+}
+/// Mixin para asignar un margen interno en cada una de las direcciones (por defecto 0)
+/// @parameter {float} $l - izquierda
+/// @parameter {float} $r - derecha
+/// @parameter {float} $t - arriba
+/// @parameter {float} $b - abajo
+/// @group layout
+@mixin padding($l: 0, $r: 0, $t: 0, $b: 0) {
+    padding-left: #{$l+"rem"};
+    padding-right: #{$r+"rem"};
+    padding-top: #{$t+"rem"};
+    padding-bottom: #{$b+"rem"};
+}
+/// Mixin para asignar un margen en cada una de las direcciones (por defecto 0)
+/// @parameter {float} $l - izquierda
+/// @parameter {float} $r - derecha
+/// @parameter {float} $t - arriba
+/// @parameter {float} $b - abajo
+/// @group layout
+@mixin margin($l: 0, $r: 0, $t: 0, $b: 0) {
+    margin-left: #{$l+"rem"};
+    margin-right: #{$r+"rem"};
+    margin-top: #{$t+"rem"};
+    margin-bottom: #{$b+"rem"};
+}
+/// Mixin para asignar estilos a títulos o subtitulos
+/// @parameter {boolean} $t - true: para títulos / false: para subtítulos
+/// @group general
+@mixin titulos($t) {
+    @if $t==true{
+        font-weight: 900;
+        font-size: $navbar-font-size;
+    }@else{
+        font-weight: 600;
+        font-size: #{($navbar-font-size)-0.3};
+    }  
+}

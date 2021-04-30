@@ -1,0 +1,17 @@
+{
+  "name": "mechekour_villar_djaafar_diw04_tarea",
+  "version": "1.0.0",
+  "description": "Proyecto Sass DIW04",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "scss",
+    "bem"
+  ],
+  "author": "Djaafar Mechekour Villar",
+  "license": "ISC"
+}

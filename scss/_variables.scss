@@ -1,0 +1,49 @@
+//// @author Djaafar Mechekour Villar
+// ----------------- VARIABLES ----------------- 
+
+// Variables por defecto
+/// Fuente general por defecto
+/// @group general
+$font-family: Arial;
+/// Tamaño de fuente por defecto
+/// @group general
+$cmmn-font-size: 1.2rem;
+/// Interlineadi por defecto
+/// @group general
+$cmmn-line-height: 30px;
+/// Espesor (Negrita) por defecto
+/// @group general
+$cmmn-font-weight: 550;
+/// Espacio entre carácteres por defecto
+/// @group general
+$cmmn-letter-spacing: 0.05rem;
+/// Color Tema principal
+/// @group general
+$main-color: rgb(219, 59, 10);
+
+// Variables Navbar y Header
+/// Tamaño de fuente de las opciones de menú
+/// @group Menu-Cabecera
+$navbar-font-size: 1.6rem;
+/// Tamaño de fuente del selector de idioma
+/// @group Menu-Cabecera
+$header-lan-font-size: 0.8rem;
+
+// Variables Elemento Bio
+/// Altura de la cabecera de la bio
+/// @group Bio
+$bio-header-height: 10rem;
+/// Tamaño de fuente de la descripción de a bio
+/// @group Bio
+$bio-header-text-size: 0.9rem;
+
+// Variables Footer
+/// Color de fondo del footer
+/// @group Footer
+$footer-bg: #000;
+/// Color de la fuente del footer
+/// @group Footer
+$footer-text-color: #fff;
+/// Espesor (Negrita) de la fuente del footer
+/// @group Footer
+$footer__items--weight: 300;

@@ -1,0 +1,155 @@
+/* ----------------  ELEMENTS  ----------------- */
+
+body{
+    font-family: $font-family;
+    font-size: $cmmn-font-size;
+    line-height: $cmmn-line-height;
+    letter-spacing: $cmmn-letter-spacing;
+    font-weight: $cmmn-font-weight;
+}
+
+.header {
+    ul {
+        list-style: none;
+        display: flex;
+        flex-flow: row-reverse wrap;
+        justify-content: space-around;
+        li { 
+            p {
+                @include titulos(true);
+            }
+        }
+    }
+    &__lan {
+        li {
+            font-size: $header-lan-font-size;
+            font-weight: bolder;
+            @include padding(0.3, 0.3, 0, 0);
+            &:hover {
+                color: $main-color;
+                cursor: pointer;
+            }
+        }
+        &--active {
+            border-bottom: 0.2rem solid black;
+        }
+   
+    }
+}
+
+nav {
+    ul {
+        list-style: none;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        li { 
+            @include padding( 1, 1, 0, 0);
+            &.--active {
+                text-decoration: underline;
+            }
+            &:hover {
+                color: $main-color;
+                cursor: pointer;
+            }
+            a {
+                @include titulos(true);
+            }
+            a:visited, a:link {
+                color: black;
+            }
+        }
+    }
+}
+
+.article {
+    @include center();
+    &__title {
+        @include titulos(true);
+    }
+
+    &__subtitle {
+        @include titulos(false);
+    }
+}
+
+.bio {
+    @include margin(0, 0, 1, 1);
+    &__header{
+        background-color: transparentize($color: $main-color, $amount: 0.95);
+        height: $bio-header-height;
+        border-bottom: 2px solid $main-color;
+        display: flex;
+        flex-direction: row;  
+        align-items: center;  
+    }
+    &__img {
+        @include margin(1, 1, 1, 1);
+        border-radius: 50%;
+        height: #{($bio-header-height)-4};
+    }
+    &__text {
+        @include margin(0.3, 0.5, 0, 0);
+        font-size: $bio-header-text-size;
+        font-weight: #{($cmmn-font-weight)-50};
+    }
+    &__body{
+        border-bottom: 2px solid $main-color;
+        @include padding(1, 0.5, 0.3, 0.3);   
+    }
+}
+
+.yt {
+    display: flex;
+    flex-direction: column;
+    @include margin(0, 0, 1, 1);
+    &__video {
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-bottom: 56.25%;
+        iframe{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__descrp {
+        line-height: #{($cmmn-line-height)-18};;
+        font-size: #{($cmmn-font-size)-0.3};
+        text-align: center;
+        font-weight: 500;
+    }
+}
+
+img{
+    &.animated_img:hover{
+        opacity: 0.5;
+        border-bottom: 0.5rem solid $main-color;;
+    }
+}
+
+.footer {
+    text-align: center;
+    @include padding(0.5, 0.5, 1.5, 1);
+    background-color: $footer-bg;
+    color: $footer-text-color;
+    &__title {
+        @include titulos(true);
+    }
+    &__item {
+        line-height: #{($cmmn-line-height)-25};
+        font-weight: $footer__items--weight;
+    }
+    &__nav-item{
+        font-size: #{($cmmn-font-size)+0.1};
+        font-weight: #{($footer__items--weight)+100};
+    }
+    &__credits {
+        line-height: #{($cmmn-line-height)-15};
+        font-size: #{($cmmn-font-size)-0.2};
+        font-weight: $footer__items--weight;
+    }
+}
