@@ -41,6 +41,11 @@
     <main>
         <div class="article wdt-6">
             <form id="contact-form" action="./index.html" method="post" class="form">
+                <div class="center">
+                    <h1>Inscripción a las X Jornadas Matemáticas</h1>
+                    <h6>Los campos señalados con * son obligatorios</h6>
+                </div>
+
                 <fieldset>
                     <legend>Datos Personales</legend>
 
@@ -55,20 +60,21 @@
                                 required="">
                         </div>
                     </div>
-                    
+
                     <div class="wdt-5 right">
                         <label class="form__label" for="apellidos_input">Apellidos:</label>
                         <div>
                             <input id="apellidos_input" name="apellidos_input" type="text" placeholder="Apellidos*"
                                 required="">
                         </div>
-                        
+
                         <label class="form__label" for="tef_input">Telefono:</label>
                         <div>
                             <input id="tef_input" name="tef_input" type="text" placeholder="Teléfono*" required="">
 
                         </div>
-                    </div><hr/>
+                    </div>
+                    <hr />
 
                     <p>Fotografía para la acreditación</p>
                     <fieldset>
@@ -82,10 +88,11 @@
 
                 <fieldset>
                     <legend>Perfil Participante</legend>
-                    
+
                     ¿Por qué está interesado en participar?*
                     <div>
-                        <textarea id="textarea" name="textarea" rows="8" cols="120" placeholder="Intereses..." required=""></textarea>
+                        <textarea id="textarea" name="textarea" rows="8" cols="120" placeholder="Intereses..."
+                            required=""></textarea>
                     </div>
 
                     <div class="form-group">
@@ -103,7 +110,10 @@
 
                     <label for="talleres_input">¿En qué talleres está
                         interesados?</label>
-                    <div class="bio__text">Para seleccionar varios con el teclado, vaya cambiando entre las opciones con las flechas de dirección, y mantenga pulsado la tecla Cntl. Pulse espacio para seleccionar o deseleccionar. Una vez haya escojido vuelva a darle a la tecla Tab para acceder al siguiente campo.</div>
+                    <div class="bio__text">Para seleccionar varios con el teclado, vaya cambiando entre las opciones con
+                        las flechas de dirección, y mantenga pulsado la tecla Cntl. Pulse espacio para seleccionar o
+                        deseleccionar. Una vez haya escojido vuelva a darle a la tecla Tab para acceder al siguiente
+                        campo.</div>
 
                     <div>
                         <select id="talleres_input" name="talleres_input" multiple="multiple">
@@ -115,13 +125,14 @@
                             <option value="6">La predicción del tiempo</option>
                             <option value="7">Fractales en el aula</option>
                         </select>
-                    </div><hr/>
+                    </div>
+                    <hr />
 
                     <label for="date_input">Seleccione una de las tres
                         opciones:*</label>
                     <div class="radio">
-                            <input type="radio" name="date_input" id="date_input-0" value="1" checked="checked">
-                            Asistiré los días 4 y 5 de mayo
+                        <input type="radio" name="date_input" id="date_input-0" value="1" checked="checked">
+                        Asistiré los días 4 y 5 de mayo
                     </div>
                     <div class="radio">
                         <label for="date_input-1">
@@ -134,7 +145,7 @@
                             <input type="radio" name="date_input" id="date_input-2" value="3">
                             Asistiré solo el día 5 de mayo
                         </label>
-                    </div><br/>
+                    </div><br />
                 </fieldset>
 
                 <label class="checkbox-inline" for="condiciones_input-0">
@@ -145,7 +156,7 @@
                 <input type="submit" value="Enviar" />
 
 
-            </form><br/>
+            </form>
         </div>
 
     </main>

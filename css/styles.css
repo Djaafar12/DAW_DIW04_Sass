@@ -1,4 +1,8 @@
 /* ----------------- UTILITIES ----------------- */
+.center {
+  text-align: center;
+}
+
 .start {
   align-self: flex-start;
 }
@@ -238,6 +242,11 @@ img.animated_img:hover {
 }
 
 /* -------- Formulario -------- n*/
+form{
+  margin-top: 5rem;
+  margin-bottom: 4rem;
+}
+
 input[type=text], select {
   width: 95%;
   padding: 12px 20px;
