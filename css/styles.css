@@ -112,7 +112,7 @@ nav ul li {
   padding-top: 0rem;
   padding-bottom: 0rem;
 }
-nav ul li.--active {
+nav ul li .--active {
   text-decoration: underline;
 }
 nav ul li:hover {
