@@ -237,4 +237,36 @@ img.animated_img:hover {
   font-weight: 300;
 }
 
+/* -------- Formulario -------- n*/
+input[type=text], select {
+  width: 95%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=text]:hover{
+  border: 1px solid #000000;
+}
+
+input[type=submit] {
+  width: 20%;
+  font-size: 1.4rem;
+  background-color: #aaa;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #db3b0a;
+}
+
+
 /*# sourceMappingURL=styles.css.map */
