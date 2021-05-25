@@ -49,27 +49,27 @@
                 <fieldset>
                     <legend>Datos Personales</legend>
                         <div class="wdt-5 left">
-                            <label class="form__label" for="nombre_input">Nombre:</label>
+                            <label class="form__label" for="nombre_input">Nombre*:</label>
                             <div>
                                 <input id="nombre_input" name="nombre_input" type="text" placeholder="Nombre*" required="">
                             </div>
-                            <label class="form__label" for="email_input">Correo Electrónico:</label>
+                            <label class="form__label" for="email_input">Correo Electrónico*:</label>
                             <div>
-                                <input id="email_input" name="email_input" type="text" placeholder="Correo Electrónico*"
+                                <input id="email_input" name="email_input" type="email" placeholder="Correo Electrónico*"
                                     required="">
                             </div>
                         </div>
     
                         <div class="wdt-5 right">
-                            <label class="form__label" for="apellidos_input">Apellidos:</label>
+                            <label class="form__label" for="apellidos_input">Apellidos*:</label>
                             <div>
                                 <input id="apellidos_input" name="apellidos_input" type="text" placeholder="Apellidos*"
                                     required="">
                             </div>
     
-                            <label class="form__label" for="tef_input">Telefono:</label>
+                            <label class="form__label" for="tef_input">Telefono*:</label>
                             <div>
-                                <input id="tef_input" name="tef_input" type="text" placeholder="Teléfono*" required="">
+                                <input id="tef_input" name="tef_input" type="tel" placeholder="Teléfono*" pattern="[9]{1}[0-9]{8}" required="">
     
                             </div>
                         </div><br/><br/>

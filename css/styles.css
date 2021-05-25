@@ -267,7 +267,7 @@ textarea{
   width: 95%;
   height: 5rem;
 }
-input[type=text], select {
+input[type=text], input[type=tel], input[type=email], select {
   width: 95%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -277,8 +277,19 @@ input[type=text], select {
   box-sizing: border-box;
 }
 
-input[type=text]:hover{
+input[type=text]:hover, input[type=tel]:hover, input[type=email]:hover{
   border: 1px solid #000000;
+}
+input[type=text]:required:focus:valid, input[type=email]:required:focus:valid {
+  background: url("https://assets.digitalocean.com/labs/icons/hand-thumbs-up.svg") no-repeat 95% 50% lightgreen;
+  background-size: 25px;
+}
+input[type=text]:required:valid, input[type=tel]:required:valid, input[type=email]:required:valid {
+  background:95% 50% lightgreen;
+  background-size: 25px;
+}
+input:invalid, textarea:invalid {
+  border-color: red;
 }
 
 input[type=submit] {
