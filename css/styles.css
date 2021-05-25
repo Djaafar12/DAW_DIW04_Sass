@@ -70,12 +70,25 @@
 }
 
 /* ----------------  ELEMENTS  ----------------- */
-body {
-  font-family: Arial;
-  font-size: 1.2rem;
-  line-height: 30px;
-  letter-spacing: 0.05rem;
-  font-weight: 550;
+@media screen and (max-width : 560px)
+{
+  body
+  {
+    font-family: Arial;
+    font-size: 0.8rem;
+    font-weight: 550;
+  }
+}
+@media screen and (min-width : 561px)
+{
+  body {
+    font-family: Arial;
+    font-size: 1.2rem;
+    letter-spacing: 0.05rem;
+    line-height: 30px;
+    font-weight: 550;
+  }
+  
 }
 
 .header ul {
@@ -131,6 +144,9 @@ nav ul li a:visited, nav ul li a:link {
   color: black;
 }
 
+.container{
+  margin: 1rem 1.4rem 1rem;
+}
 .article {
   margin: 0 auto;
 }
