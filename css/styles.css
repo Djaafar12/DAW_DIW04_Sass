@@ -247,6 +247,10 @@ form{
   margin-bottom: 4rem;
 }
 
+textarea{
+  width: 95%;
+  height: 5rem;
+}
 input[type=text], select {
   width: 95%;
   padding: 12px 20px;
