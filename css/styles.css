@@ -78,6 +78,9 @@
     font-size: 0.8rem;
     font-weight: 550;
   }
+  input[type=submit] {
+    width: 100%;
+  }
 }
 @media screen and (min-width : 561px)
 {
@@ -87,6 +90,9 @@
     letter-spacing: 0.05rem;
     line-height: 30px;
     font-weight: 550;
+  }
+  input[type=submit] {
+    width: 20%;
   }
 }
 
@@ -298,7 +304,6 @@ input:invalid, textarea:invalid {
 }
 
 input[type=submit] {
-  width: 100%;
   font-size: 1.4rem;
   background-color: #aaa;
   color: white;
