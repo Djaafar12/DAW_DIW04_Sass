@@ -267,6 +267,11 @@ textarea{
   width: 95%;
   height: 5rem;
 }
+
+input[type=input-file]{
+  width: 95%;
+}
+
 input[type=text], input[type=tel], input[type=email], select {
   width: 95%;
   padding: 12px 20px;
